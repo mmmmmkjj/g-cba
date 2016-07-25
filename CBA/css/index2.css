@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 100%;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.wrap {
+  width: 100%;
+  max-width: 640px;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.start {
+  height: 100%;
+  background: url("../img/start_bg.jpg") no-repeat center;
+  background-size: 100% 100%;
+  position: relative;
+  z-index: 99;
+}
+.start_btn {
+  width: 271px;
+  height: 94px;
+  background: url("../img/start.png") 0 0 no-repeat;
+  background-size: 100% 100%;
+  width: 42.34375%;
+  height: 9.32539%;
+  position: absolute;
+  top: 64.48412%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: none;
+  outline: medium;
+}
+.game {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background: url("../img/bg.jpg") 0 0 no-repeat;
+  background-size: 100% 100%;
+  transform-style: preserve-3d;
+  transform-origin: center center;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform-origin: center center;
+}
+.stands {
+  width: 56%;
+  height: 20.93253%;
+  background: url("../img/stands.jpg") 0 0 no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 22%;
+  top: 20%;
+}
+.hoop_bottom,
+.hoop_top {
+  width: 38%;
+  height: 15%;
+  position: absolute;
+  left: 31%;
+  top: 80%;
+}
+.hoop_bottom {
+  background: url("../img/hoop_bottom.png");
+  background-size: 100% 100%;
+}
+.hoop_top {
+  background: url("../img/hoop_top.png");
+  background-size: 100% 100%;
+}
+.net {
+  width: 35.81267%;
+  height: 66.82464%;
+  background: url("../img/net.png");
+  background-size: 100% 100%;
+  left: 32.093665%;
+  top: 88%;
+  position: absolute;
+}
+.ball {
+  width: 0.114rem;
+  height: 0.114rem;
+  background: url("../img/ball.png") 0 0 no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  border-radius: 50%;
+  left: 41%;
+  top: 88.5%;
+  z-index: 10;
+}
+.shadow {
+  width: 0.1rem;
+  height: 0.025rem;
+  background: url("../img/ball_shadow.png") 0 0 no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 41%;
+  top: 90%;
+  border-radius: 50%;
+}
+#ball2 {
+  left: 11%;
+}
+#ball3 {
+  left: 71%;
+}
+#shadow2 {
+  left: 11%;
+}
+#shadow3 {
+  left: 71%;
+}
+.score,
+.time {
+  font-size: 0.045rem;
+  color: #ff0000;
+  position: absolute;
+  z-index: 10;
+}
+.score {
+  left: 32%;
+  top: 14.5%;
+}
+.time {
+  left: 63%;
+  top: 14.5%;
+}
+.end {
+  display: none;
+  width: 83.90625%;
+  height: 34.359%;
+  position: absolute;
+  background: url(../img/emd_bg.png) no-repeat;
+  background-size: 100% 100%;
+  z-index: 20;
+  left: 7%;
+  top: 33%;
+}
+.end span {
+  font-size: 0.1rem;
+  color: #ffffff;
+  position: absolute;
+  left: 55%;
+  top: 30%;
+}
+.end span:nth-child(2) {
+  left: 73%;
+}
+.end .evaluate,
+.end .tips {
+  font-size: 0.02rem;
+  color: #ff0000;
+  position: absolute;
+  right: 5%;
+}
+.end .evaluate {
+  top: 60%;
+}
+.end .tips {
+  top: 70%;
+}
+.end .share > span {
+  font-size: 0.03rem;
+  position: absolute;
+  top: 80%;
+  left: 15%;
+}
+.end .shar_img {
+  font-size: 0.04rem;
+  list-style: none;
+  position: absolute;
+  left: 38%;
+  top: 78%;
+}
+.end .shar_img li {
+  width: 16%;
+  float: left;
+  padding: 2%;
+}
+.end .shar_img li img {
+  width: 100%;
+}
+.end .close {
+  position: absolute;
+  right: 0;
+  top: -1rem;
+}
+/*# sourceMappingURL=index2.css.map */

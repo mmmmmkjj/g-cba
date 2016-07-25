@@ -1,0 +1,205 @@
+@100: 100%;
+.back_size() {
+    background-size: 100% 100%;
+}
+@ball: 0.2rem;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 100%;
+}
+html,body {
+    width: @100;
+    height: @100;
+    overflow: hidden;
+}
+.wrap {
+    width: @100;
+    max-width: 640px;
+    height: @100;
+    overflow: hidden;
+    position: relative;
+}
+.loading {
+    
+}
+.start {
+    height: @100;
+    background: url("../img/start_bg.jpg") no-repeat center;
+    .back_size();
+    position: relative;
+    z-index: 99;
+}
+.start_btn {
+    width: 271px;
+    height: 94px;
+    background: url("../img/start.png") 0 0 no-repeat;
+    .back_size();
+    width: 42.34375%;
+    height: 9.32539%;
+    position: absolute;
+    top: 64.48412%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: none;
+    outline: medium;
+}
+.game {
+    width: @100;
+    height: @100;
+    overflow: hidden;
+    position: relative;
+    background: url("../img/bg.jpg") 0 0 no-repeat;
+    .back_size();
+    transform-style: preserve-3d;
+    transform-origin: center center;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform-origin: center center;
+}
+.stands {
+    width: 56%;
+    height: 20.93253%;
+    background: url("../img/stands.jpg") 0 0 no-repeat;
+    .back_size();
+    position: absolute;
+    left: 22%;
+    top: 20%;
+}
+.hoop_bottom, .hoop_top {
+    width: 38%;
+    height: 15%;
+    position: absolute;
+    left: 31%;
+    top: 80%;
+}
+.hoop_bottom {
+    background: url("../img/hoop_bottom.png");
+    .back_size();
+}
+.hoop_top {
+    background: url("../img/hoop_top.png");
+    .back_size();
+}
+.net {
+    width: 35.81267%;
+    height: 66.82464%;
+    background: url("../img/net.png");
+    .back_size();
+    left: 32.093665%;
+    top: 88%;
+    position: absolute;
+}
+.ball {
+    width: @ball;
+    height: @ball;
+    background: url("../img/ball.png") 0 0 no-repeat;
+    .back_size();
+    position: absolute;
+    border-radius: 50%;
+    left: 41%;
+    top: 88.5%;
+    z-index: 10;
+}
+.shadow {
+    width: 0.2rem;
+    height: 0.05rem;
+    background: url("../img/ball_shadow.png") 0 0 no-repeat;
+    .back_size();
+    position: absolute;
+    left: 41%;
+    top: 90%;
+    border-radius: 50%;
+}
+#ball2 {
+    left: 11%;
+}
+#ball3 {
+    left: 71%;
+}
+#shadow2 {
+    left: 11%;
+}
+#shadow3 {
+    left: 71%;
+}
+.score, .time {
+    font-size: 0.085rem;
+    color: rgb(255,0,0);
+    position: absolute;
+    z-index: 10;
+}
+.score {
+    left: 32%;
+    top: 14.5%;
+}
+.time {
+    left: 63%;
+    top: 14.5%;
+}
+//游戏结束
+.end {
+    display: none;
+    width: 83.90625%;
+    height: 34.359%;
+    position: absolute;
+    background: url(../img/emd_bg.png) no-repeat;
+    background-size: @100 @100;
+    z-index: 20;
+    left: 7%;
+    top: 33%;
+    span {
+        font-size: 0.17rem;
+        color: #ffffff;
+        position: absolute;
+        left: 55%;
+        top: 30%;
+    }
+    span:nth-child(2) {
+        left: 73%;
+    }
+    .evaluate, .tips {
+        font-size: 0.04rem;
+        color: #ff0000;
+        position: absolute;
+        right: 5%;
+    }
+    .evaluate {
+        top: 60%;
+    }
+    .tips {
+        top: 70%;
+    }
+    .share {
+    }
+    .share>span {
+        font-size: 0.06rem;
+        position: absolute;
+        top: 80%;
+        left: 15%;
+    }
+    .shar_img {
+        font-size: 26px;
+        list-style: none;
+        position: absolute;
+        left: 38%;
+        top: 78%;
+        li {
+            width: 16%;
+            float: left;
+            padding: 2%;
+            img {
+                width: @100;
+            }
+        }
+    }
+    .close {
+        position: absolute;
+        right: 0;
+        top: -1rem;
+    }
+    
+}

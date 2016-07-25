@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<title>CBA</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/keyframe.css"/>
+		<script src="js/pixi.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			document.getElementsByTagName('html')[0].style.fontSize = document.documentElement.clientWidth + 'px';
+//			document.getElementsByTagName('html')[0].style.fontSize = document.documentElement.clientHeight + 'px';
+		</script>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="load">
+				<div class="loading"></div>
+			</div>
+			<div class="start" id="start">
+				<button class="start_btn" id="start_btn"></button>
+			</div>
+			<div class="end" id="end">
+				<span>0</span>
+				<span>0</span>
+				<p class="evaluate">堪称MVP级的表现！</p>
+				<p class="tips">分享到朋友圈，能提升获奖几率！</p>
+				<div class="share">
+					<span>分享到</span>
+					<ul class="shar_img">
+						<li><img src="img/fx1.png" alt="微信" /></li>
+						<li><img src="img/fx2.png" alt="微博" /></li>
+						<li><img src="img/fx3.png" alt="豆瓣" /></li>
+						<li><img src="img/fx4.png" alt="人人" /></li>
+						<li><img src="img/fx5.png" alt="开心网" /></li>
+					</ul>
+					<div class="close"><img src="img/close.png" alt="关闭"/></div>
+				</div>
+			</div>
+			<div class="game">
+				<div class="stands">
+					<div class="hoop_bottom"></div>
+					<div class="hoop_top"></div>
+					<div class="net" id="net"></div>
+				</div>
+				<div class="ball" id="ball1"></div>
+				<div class="shadow" id="shadow1"></div>
+				<div class="ball" id="ball2"></div>
+				<div class="shadow" id="shadow2"></div>
+				<div class="ball" id="ball3"></div>
+				<div class="shadow" id="shadow3"></div>
+				<div class="score" id="score"></div>
+				<div class="time" id="time"></div>
+			</div>
+		</div>
+	</body>
+	<script src="js/loading.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/index2.js" type="text/javascript" charset="utf-8"></script>
+</html>
